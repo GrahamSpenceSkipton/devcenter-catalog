@@ -1,0 +1,5 @@
+name: SandboxNew
+summary: Sandbox environment new
+description: Deploys a sandbox environment
+runner: ARM
+templatePath: azuredeploy.json
