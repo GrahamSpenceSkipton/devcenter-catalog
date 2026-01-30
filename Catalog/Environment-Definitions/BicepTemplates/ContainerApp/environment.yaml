@@ -7,7 +7,7 @@ parameters:
   name: "Number of CPU Cores"
   description: "Number of CPU Cores available to the Container App"
   type: "string"
-  default: ".5"
+  default: "0.5"
   allowed:
   - "0.25"
   - "0.5"
@@ -43,6 +43,10 @@ parameters:
 runner: Bicep
 deploymentParameters:
 - name: containerImage
-  value: ${{ parameters.containerImage }}
+  value: '${{ parameters.containerImage }}'
 - name: location
-  value: ${{ parameters.location }}
+  value: '${{ parameters.location }}'
+- name: cpuCore
+  value: '${{ parameters.cpuCore }}'
+- name: memorySize
+  value: '${{ parameters.memorySize }}'
