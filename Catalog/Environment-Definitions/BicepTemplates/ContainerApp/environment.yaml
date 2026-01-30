@@ -41,3 +41,12 @@ parameters:
   type: "string"
   default: "uksouth"
 runner: Bicep
+deploymentParameters:
+- name: containerImage
+  value: ${{ parameters.containerImage }}
+# - name: cpuCore
+#   value: ${{ parameters.cpuCore }}
+# - name: memorySize
+#   value: ${{ parameters.memorySize }}
+- name: location
+  value: ${{ parameters.location }}
